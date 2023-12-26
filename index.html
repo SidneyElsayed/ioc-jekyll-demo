@@ -1,5 +1,34 @@
 ---
 layout: default
-title: Homepage
+title: The ultimate coding playground
+cards:
+ - title: Coding <br> Challenge
+   subtitle: HTML & CSS
+   color: bg-yellow
+   photo: https://www.instituteofcode.com/assets/images/cutout-3.png
+ - title: Instagram <br> Challenge
+   subtitle: SOCIAL FOUNDATIONS
+   color: bg-blue
+   photo: https://www.instituteofcode.com/assets/images/cutout-2.png
+ - title: Photography <br> Challenge
+   subtitle: HTML & CSS
+   color: bg-red
+   photo: https://www.instituteofcode.com/assets/images/cutout-1.png
 ---
-<h1>Welcome to your homepage!</h1>
+<section class="text-center padded mob-padded-0">
+    <h2> Upcoming Challenges </h2>
+    <div class="grid horizontal-scroll">
+    
+        {% for item in page.cards %}
+        <!--   Card 1     -->
+        <div class="col-4_xs-11 padded-05"> 
+            <div class="card {{item.color}}">
+            <h3> {{item.title}} </h3>
+            <h4> {{item.subtitle}} </h4>
+            <img src="{{item.photo}}">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+  </section>
+

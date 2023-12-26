@@ -2,15 +2,50 @@
 <html lang="en">
 
 <head>
+    <!-- The title for SEO & browser tabs -->
+    <title> {{page.title}} </title>
+
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Gridlex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    
+    <!-- Add Google Fonts Here  -->
+
+    <!-- Style Sheet -->
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <title>{{page.title}}</title>
+    
 </head>
 
 <body>
+    <!------- Header ------->
+    <header class="grid-middle padded-lg bg-image text-center tall-60">
+        <div class="col-12-middle">
+            <h1>{{page.title}}</h1>
+        </div>
+    </header>
+
     {{content}}
+
+     <!------- Footer ------->
+     <footer class="grid-spaceBetween padded bg-dark">
+        <div class="col-5_sm-12">
+            <h2 class="margin-b-0">Let's <span class="featured-text">connect</span></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur aliquid tenetur velit iste? Itaque atque magnam eaque necessitatibus tempore harum consequuntur dicta architecto suscipit nihil repellendus, ratione, eligendi rerum eum?</p>
+        </div>
+        <div class="col-3_sm-12-bottom margin-t-2-sm">
+            <p class="margin-b-0"><a href="tel:966553334444"><span class="bold">Phone:</span> 966 55 333 4444</a></p>
+            <p class="margin-b-0"><a href="mailto:hello@thesleep.co"><span class="bold">Email:</span> hello@thesleep.co</a></p>
+            <p class="margin-b-0"><a href="maps.google.com"><span class="bold">Store:</span> 321 Main Street, AlUla</a></p>
+            <p class="margin-b-0"><a href="instagram.com"><span class="bold">Instagram:</span> @thesleepco</a></p>
+        </div>
+        <div class="col-12 text-center">
+            <p class="copyright">Copyright 2023</p>
+        </div>
+    </footer>
 </body>
 
 </html>
